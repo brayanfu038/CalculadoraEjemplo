@@ -16,6 +16,7 @@ public class Calculadora {
         System.out.println("2. Restar");
         System.out.println("3. Multiplicar");
         System.out.println("4. Dividir");
+        System.out.println("5. Salir");
 
         // Leer la opción de operación
         operacion = scanner.nextInt();
@@ -29,30 +30,29 @@ public class Calculadora {
 
         // Realizar la operación seleccionada
         switch (operacion) {
-            case 1:
+            case 1 -> {
                 resultado = num1 + num2;
                 System.out.println("Resultado: " + resultado);
-                break;
-            case 2:
+            }
+            case 2 -> {
                 resultado = num1 - num2;
                 System.out.println("Resultado: " + resultado);
-                break;
-            case 3:
+            }
+            case 3 -> {
                 resultado = num1 * num2;
                 System.out.println("Resultado: " + resultado);
-                break;
-            case 4:
-                 if (num2 != 0) {
-                resultado = num1 / num2;
-                System.out.println("Resultado: " + resultado);
-                 } else {
-                System.out.println("Error: No se puede dividir entre cero.");
+            }
+            case 4 -> {
+                if (num2 != 0) {
+                    resultado = num1 / num2;
+                    System.out.println("Resultado: " + resultado);
+                } else {
+                    System.out.println("Error: No se puede dividir entre cero.");
                 }
-            break;
-
-            break;
-            default:
-                System.out.println("Opción no válida.");
+            }
+            case 5 -> {
+            }
+            default -> System.out.println("Opción no válida.");
         }
 
         // Cerrar el scanner
