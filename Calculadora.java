@@ -42,8 +42,14 @@ public class Calculadora {
                 System.out.println("Resultado: " + resultado);
                 break;
             case 4:
+                 if (num2 != 0) {
                 resultado = num1 / num2;
                 System.out.println("Resultado: " + resultado);
+                 } else {
+                System.out.println("Error: No se puede dividir entre cero.");
+                }
+            break;
+
             break;
             default:
                 System.out.println("Opción no válida.");
