@@ -53,7 +53,10 @@ public class Calculadora {
             break;
             default:
                 System.out.println("Opción no válida.");
+                
         }
+        System.out.println("hola");
+        System.out.println("holaw");
 
         // Cerrar el scanner
         scanner.close();
