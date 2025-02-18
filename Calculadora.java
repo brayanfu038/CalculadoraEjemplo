@@ -38,7 +38,8 @@ public class Calculadora {
                 System.out.println("Resultado: " + resultado);
                 break;
             case 3:
-                
+                resultado = num1 * num2;
+                System.out.println("Resultado: " + resultado);
                 break;
             case 4:
                
